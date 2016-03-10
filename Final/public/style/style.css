@@ -1,0 +1,59 @@
+body {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+/*			*/
+/* hoofd divs*/
+/*			*/
+
+#wrapper {
+	width:1500px;
+	margin:0 auto;
+	clear:both;
+}
+
+#header {
+	margin-top:0;
+	height:400px;
+	overflow:auto;
+}
+
+#main {
+	height:500px;
+	overflow:auto;
+}
+
+#footer {
+	display:block;
+	position: fixed; 
+	bottom:0px; 
+	height:30px;
+	width:1450px;
+	margin-left:25px;
+	border-top-right-radius:5px; 
+	border-top-left-radius:5px;
+}
+
+/*			*/
+/*sub divs*/
+/*			*/
+
+#headerbox {
+	width:550px;
+	height:200px;
+	margin: 0 auto;
+	margin-top:150px;
+	border:2px solid #73AD21;
+	border-radius: 5px;
+
+}
+
+#mainbox {
+	width:1450px;
+	height:450px;
+	margin: 0 auto;
+	margin-top:25px;
+	border:2px solid #73AD21;
+	border-radius: 5px;
+}

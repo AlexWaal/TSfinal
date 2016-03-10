@@ -3,6 +3,7 @@ body {
 	padding: 0 auto;
 }
 
+
 /*			*/
 /* hoofd divs*/
 /*			*/
@@ -46,7 +47,6 @@ body {
 	margin-top:150px;
 	border:2px solid #73AD21;
 	border-radius: 5px;
-
 }
 
 #mainbox {
@@ -57,3 +57,46 @@ body {
 	border:2px solid #73AD21;
 	border-radius: 5px;
 }
+
+/*			*/
+/*input*/
+/*			*/
+
+form{
+	margin-left:21.5px;
+	margin-top:25px;
+}
+
+input[type=text] {
+	width: 500px;
+	height: 25px;
+	text-align:center;
+	/*background-color:#73AD21;*/
+	border-style:none; 
+	outline: none;
+	outline: none;
+  	border: 1px solid #DDDDDD;
+}
+
+input[type=radio] {
+	margin-top:10px;
+	background-color: red;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+
+
+
+/*
+textarea, input { 
+	outline: none; 
+}
+*/

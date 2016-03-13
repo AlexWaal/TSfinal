@@ -1,0 +1,16 @@
+.testhoofd {
+	width:200px;
+	height:200px;
+	border:2px solid #73AD21;
+	
+	margin-left:10px;
+	margin-top:10px;
+	float:left;
+	border-radius:10px;
+}
+
+.testkind {
+	margin-left:5px;
+	margin-top:5px;
+	overflow:hidden;
+}

@@ -42,14 +42,24 @@
 
     <main id="main">
         <div id="mainbox">
-            <table class="table">
-                <tr ng-repeat="todo in todos">
-                <td>{{todo.task}}</td>
-                <td>
+
+            <div class="testhoofd" ng-repeat="todo in todos">
+                <div class="testkind">
+                    {{todo.task}}
                     <button class="btn" ng-click="delete(todo._id)">delete</button>
-                </td>
+                </div>
+            </div>
+
+
+       <!--     <table class="table">
+                <tr ng-repeat="todo in todos">
+                    <td>{{todo.task}}</td>
+                    <td>
+                    <button class="btn" ng-click="delete(todo._id)">delete</button>
+                    </td>
                 </tr>
              </table>
+        -->
         </div>
     </main>
 

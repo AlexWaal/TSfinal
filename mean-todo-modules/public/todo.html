@@ -31,10 +31,10 @@
                 <INPUT class="selectbutton" type="checkbox" name="typeA" value ="Music"> Music
                 <INPUT class="selectbutton" type="checkbox" name="typeA" value ="SoundScape"> Soundscape
                 </br>
-                <INPUT class="authorinput" type="text" name="txtName" value ="" placeholder="Author">
-                <INPUT class="titelinput" type="text" name="txtName" value ="" placeholder="titel">
-                <INPUT class="commentinput" type="text" name="txtName" value ="" placeholder="comment..">
-                <button type="submit"  ></a> Add</button> 
+                <INPUT ng-model="todo.author" class="authorinput" type="text" name="txtName" value ="" placeholder="Author">
+                <INPUT ng-model="todo.titel" class="titelinput" type="text" name="txtName" value ="" placeholder="titel">
+                <INPUT ng-model="todo.comment" class="commentinput" type="text" name="txtName" value ="" placeholder="comment..">
+                <button type="submit"></a> Add</button> 
             </form> 
 
         </div>
@@ -46,6 +46,7 @@
             <div class="testhoofd" ng-repeat="todo in todos">
                 <div class="testkind">
                     {{todo.task}}
+                    {{todo.titel}}
                     <button class="btn" ng-click="delete(todo._id)">delete</button>
                 </div>
             </div>

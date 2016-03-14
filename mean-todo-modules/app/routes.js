@@ -15,7 +15,7 @@ module.exports = function (app) {
   });
 
   app.post('/todo', function (req, res) {
-    var newTodo = new Todo({task: req.body.task});
+    var newTodo = new Todo({task: req.body.task, titel: req.body.titel} );
 
     newTodo.save(function (err) {
       if (err)res.send(err);

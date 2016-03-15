@@ -1,4 +1,4 @@
-angular.module('todo', ['todoController', 'todoService']);
+angular.module('todo', ['todoController', 'todoService', 'myAppWithSceDisabledmyApp']);
 
 /*
 function validate(){

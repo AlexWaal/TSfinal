@@ -14,6 +14,7 @@
 
     <script src="controllers/todoController.js"></script>
     <script src="services/todoMongoService.js"></script>
+    <script src="script/srcdis.js"></script>
     <script src="script/todo.js"></script>
 
 </head>
@@ -23,7 +24,7 @@
     <header id="header">
         <div id="headerbox">  
 
-            <form name="inputbox">
+            <form name="inputbox" >
                 <INPUT ng-model="todo.task" id="fileinput" type="text" name="txtName" value ="" placeholder="Link.." required="required"> 
                 <button type="submit" ng-click="save()" ng-model-instant ></a> Add</button> 
                 </br>
@@ -45,22 +46,16 @@
 
             <div class="testhoofd" ng-repeat="todo in todos">
                 <div class="testkind">
-                    {{todo.task}}
+
+                    <audio controls>
+                        <source ng-src="{{todo.task}}" type="audio/mpeg">
+                    </audio>
                     {{todo.titel}}
+                    
                     <button class="btn" ng-click="delete(todo._id)">delete</button>
                 </div>
             </div>
 
-
-       <!--     <table class="table">
-                <tr ng-repeat="todo in todos">
-                    <td>{{todo.task}}</td>
-                    <td>
-                    <button class="btn" ng-click="delete(todo._id)">delete</button>
-                    </td>
-                </tr>
-             </table>
-        -->
         </div>
     </main>
 

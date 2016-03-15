@@ -1,8 +1,3 @@
-/**
- * Created by littleworld on 23/02/16.
- */
-
-
 var mongoose = require('mongoose');
 
 

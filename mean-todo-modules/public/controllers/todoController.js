@@ -1,10 +1,5 @@
-/**
- * Created by littleworld on 21/02/16.
- */
-
-
 angular.module('todoController', [])
-  .controller('TodoCrtl', ['$scope', '$http', 'Todos', function ($scope, $http, Todos) {
+  .controller('TodoCrtl', ['$scope', '$http', 'Todos', function ($scope, $http, Todos, $sce) {
 
 
     load = function () {
@@ -28,4 +23,6 @@ angular.module('todoController', [])
           load();
         });
     };
+
+
   }]);

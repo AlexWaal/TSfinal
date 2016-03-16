@@ -1,3 +1,8 @@
+@font-face {
+	font-family:'Montserrat';
+	src: url('fonts/Montserrat-Regular.ttf');
+}
+
 #addbox {
 	width:250px;
 	height:200px;
@@ -5,6 +10,8 @@
 	margin-left:10px;
 	margin-top:10px;
 	float:left;
+	font-family:'Montserrat', sans-serif;
+	font-size:12px;
 }
 
 #innerbox {
@@ -17,10 +24,12 @@
 #titeldiv {
 	width:210px;
 	height:25px;
+	color:#FF553F;
 	background-color:#23272D;
 	padding-left:5px;
 	padding-top:5px;
 	float:left;
+	margin-bottom:2px;
 }
 
 #authordiv {
@@ -37,7 +46,7 @@
 #commentdiv {
 	margin-top:2px;
 	width:250px;
-	height:50px;
+	height:65px;
 	background-color:#23272D;
 	padding-left:5px;
 	padding-top:5px;
@@ -50,19 +59,55 @@
 	height:40px;
 	margin-top:2px;
 	background-color:#23272D;
-	padding-left:5px;
-	padding-top:5px;
+
 	float:left;
 }
 
+#voteup {
+	width:24px;
+	height:24px;
+	margin:3px;
+	background-color:#373D45;
+	float:left;
+
+	border: none;
+    color: #00E3AF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: bold;
+    cursor: pointer; 
+
+}
+#votedown {
+	width:24px;
+	height:24px;
+	margin-right:7px;
+	margin-top:3px;
+	background-color:#373D45;
+	float:right;
+
+	border: none;
+    color: #FF3273;
+    text-align: center;
+    text-decoration: none;
+  
+    font-size: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    
+
+}
 
 .delbtn {
-    background-color: #FF553F;
-    width:30px;
+    background-color: #23272D;
+    width:29px;
     height:30px;
+    margin-left:2px;
+    margin-bottom:2px;
 
     border: none;
-    color: white;
+    color: #FF553F;
     padding: 5px 5px;
     text-align: center;
     text-decoration: none;
@@ -72,7 +117,6 @@
     cursor: pointer;
     float:left;
 }
-
 
 audio::-webkit-media-controls-volume-slider-container{display:none;}
 audio::-webkit-media-controls-volume-slider{display:none;}

@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="style/jquery-ui.min.css">
     <link rel="stylesheet" href="style/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="fonts/Montserrat-Bold.ttf">
+    <link rel="stylesheet" href="fonts/Montserrat-Regular.ttf">
 
     <title>final</title>
 
@@ -57,8 +59,8 @@
                     <div id="authordiv">{{todo.author}}</div>
                     <div id="commentdiv">{{todo.comment}}</div>
                     <div id="votediv">
-                        <button ng-mousedown="bij = bij + 1" ng-init="bij=0">+</button>{{bij}}
-                        {{af}}<button ng-mousedown="af = af + 1" ng-init="af=0">-</button>
+                        <button id="voteup" ng-mousedown="bij = bij + 1" ng-init="bij=0">{{"+" + bij}}</button>
+                        <button id="votedown" ng-mousedown="af = af + 1" ng-init="af=0">{{"-" + af}}</button>
                     </div>
                 </div>
             </div>

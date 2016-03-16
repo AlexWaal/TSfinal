@@ -1,16 +1,80 @@
-.testhoofd {
-	width:340px;
-	height:170px;
-	border:2px solid #73AD21;
-	
+#addbox {
+	width:250px;
+	height:200px;
+	border:2px solid #23272D;
 	margin-left:10px;
 	margin-top:10px;
 	float:left;
-	border-radius:10px;
 }
 
-.testkind {
-	margin-left:5px;
-	margin-top:5px;
+#innerbox {
+	margin:2px;
+	height:195px;
 	overflow:hidden;
+	color:white;
 }
+
+#titeldiv {
+	width:210px;
+	height:25px;
+	background-color:#23272D;
+	padding-left:5px;
+	padding-top:5px;
+	float:left;
+}
+
+#authordiv {
+	margin-top:2px;
+	width:250px;
+	height:25px;
+	background-color:#23272D;
+	padding-left:5px;
+	padding-top:5px;
+	float:left;
+	color:#7A7B74;
+}
+
+#commentdiv {
+	margin-top:2px;
+	width:250px;
+	height:50px;
+	background-color:#23272D;
+	padding-left:5px;
+	padding-top:5px;
+	float:left;
+	color:#7A7B74;
+}
+
+#votediv {
+	width:250px;
+	height:40px;
+	margin-top:2px;
+	background-color:#23272D;
+	padding-left:5px;
+	padding-top:5px;
+	float:left;
+}
+
+
+.delbtn {
+    background-color: #FF553F;
+    width:30px;
+    height:30px;
+
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+  
+    font-size: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    float:left;
+}
+
+
+audio::-webkit-media-controls-volume-slider-container{display:none;}
+audio::-webkit-media-controls-volume-slider{display:none;}
+audio {width:250px; background-color:black; margin-bottom:-4px;}
+

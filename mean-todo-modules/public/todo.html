@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <script src="script/jquery-2.2.1.js"></script>
     <script src="script/angular.js"></script>
-
+    <script src="script/jquery-2.2.1.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/soundbox.css">
+    <link rel="stylesheet" href="style/jquery-ui.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
 
     <title>final</title>
 
@@ -16,6 +20,7 @@
     <script src="services/todoMongoService.js"></script>
     <script src="script/srcdis.js"></script>
     <script src="script/todo.js"></script>
+    <script src="script/JQfunctions.js"></script>
 
 </head>
 <body>
@@ -26,16 +31,11 @@
 
             <form name="inputbox" >
                 <INPUT ng-model="todo.task" id="fileinput" type="text" name="txtName" value ="" placeholder="Link.." required="required"> 
-                <button type="submit" ng-click="save()" ng-model-instant ></a> Add</button> 
                 </br>
-                <INPUT class="selectbutton" type="checkbox" name="typeA" value ="SFX" checked> SFX 
-                <INPUT class="selectbutton" type="checkbox" name="typeA" value ="Music"> Music
-                <INPUT class="selectbutton" type="checkbox" name="typeA" value ="SoundScape"> Soundscape
-                </br>
-                <INPUT ng-model="todo.author" class="authorinput" type="text" name="txtName" value ="" placeholder="Author">
                 <INPUT ng-model="todo.titel" class="titelinput" type="text" name="txtName" value ="" placeholder="titel">
+                <INPUT ng-model="todo.author" class="authorinput" type="text" name="txtName" value ="" placeholder="Author">
                 <INPUT ng-model="todo.comment" class="commentinput" type="text" name="txtName" value ="" placeholder="comment..">
-                <button type="submit"></a> Add</button> 
+                 <button type="submit" ng-click="save()" ng-model-instant ></a> Add</button> 
             </form> 
 
         </div>
@@ -44,18 +44,24 @@
     <main id="main">
         <div id="mainbox">
 
-            <div class="testhoofd" ng-repeat="todo in todos">
-                <div class="testkind">
+            <div id="addbox" ng-repeat="todo in todos">
+                <div id="innerbox">
+                    <div id="titeldiv">{{todo.titel}}</div>
+                    <button class="delbtn" ng-click="delete(todo._id)"> &#9587;</button>
 
-                    <audio controls>
+                    <audio controls="play">
                         <source ng-src="{{todo.task}}" type="audio/mpeg">
+                        <source ng-src="{{todo.task}}" type="audio/ogg">
                     </audio>
-                    {{todo.titel}}
-                    
-                    <button class="btn" ng-click="delete(todo._id)">delete</button>
+
+                    <div id="authordiv">{{todo.author}}</div>
+                    <div id="commentdiv">{{todo.comment}}</div>
+                    <div id="votediv">
+                        <button ng-mousedown="bij = bij + 1" ng-init="bij=0">+</button>{{bij}}
+                        {{af}}<button ng-mousedown="af = af + 1" ng-init="af=0">-</button>
+                    </div>
                 </div>
             </div>
-
         </div>
     </main>
 

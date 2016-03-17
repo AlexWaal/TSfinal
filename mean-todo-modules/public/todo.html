@@ -7,6 +7,9 @@
     <script src="script/angular.js"></script>
     <script src="script/jquery-2.2.1.js"></script>
     <script src="script/jquery-ui.min.js"></script>
+    <script src="script/angular-animate.min.js"></script>
+    <script src="script/angular-resource.min.js"></script>
+    <script src="script/angular-route.min.js"></script>
     
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/soundbox.css">
@@ -29,7 +32,7 @@
 
 <div id="wrapper" ng-controller="TodoCrtl">
     <header id="header">
-        <div id="headerbox">  
+        <div ng-view id="headerbox">  
 
             <form name="inputbox" >
                 <INPUT ng-model="todo.task" id="fileinput" type="text" name="txtName" value ="" placeholder="Link.." required="required"> 
@@ -39,7 +42,7 @@
                 <INPUT ng-model="todo.comment" class="commentinput" type="text" name="txtName" value ="" placeholder="comment..">
                  <button type="submit" ng-click="save()" ng-model-instant ></a> Add</button> 
             </form> 
-
+  
         </div>
     </header>
 

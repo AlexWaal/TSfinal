@@ -1,4 +1,4 @@
-angular.module('formApp', ['ngAnimate', 'ui.router'])
+angular.module('formroute', ['ngAnimate', 'ui.router'])
 .config(function($stateProvider, $urlRouterProvider) {
     
     $stateProvider
@@ -24,13 +24,8 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
         });
        
     $urlRouterProvider.otherwise('/form/soundform');
-})
-
-.controller('formController', function($scope) {
-    
-    $scope.formData = {};
-    $scope.processForm = function() {
-        alert('awesome!');  
-    };
-    
 });
+
+
+
+

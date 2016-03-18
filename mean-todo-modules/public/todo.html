@@ -7,33 +7,40 @@
     <script src="script/angular.js"></script>
     <script src="script/jquery-2.2.1.js"></script>
     <script src="script/jquery-ui.min.js"></script>
-    <script src="script/angular-animate.min.js"></script>
     <script src="script/angular-resource.min.js"></script>
     <script src="script/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.1/angular-animate.min.js"></script>
     
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/formstyle.css">
     <link rel="stylesheet" href="style/soundbox.css">
     <link rel="stylesheet" href="style/jquery-ui.min.css">
     <link rel="stylesheet" href="style/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="style/jquery-ui.theme.min.css">
-    <link rel="stylesheet" href="fonts/Montserrat-Bold.ttf">
-    <link rel="stylesheet" href="fonts/Montserrat-Regular.ttf">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/darkly/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>final</title>
 
     <script src="controllers/todoController.js"></script>
+    <script src="controllers/formController.js"></script>
+    <script src="routes/formroute.js"></script>
     <script src="services/todoMongoService.js"></script>
     <script src="script/srcdis.js"></script>
     <script src="script/todo.js"></script>
     <script src="script/JQfunctions.js"></script>
+    
 
 </head>
 <body>
 
 <div id="wrapper" ng-controller="TodoCrtl">
     <header id="header">
-        <div ng-view id="headerbox">  
+        <div ng-view id="headerbox" ng-controller="formCtrl">  
+            <div ui-view></div>
 
+<!--
             <form name="inputbox" >
                 <INPUT ng-model="todo.task" id="fileinput" type="text" name="txtName" value ="" placeholder="Link.." required="required"> 
                 </br>
@@ -42,7 +49,7 @@
                 <INPUT ng-model="todo.comment" class="commentinput" type="text" name="txtName" value ="" placeholder="comment..">
                  <button type="submit" ng-click="save()" ng-model-instant ></a> Add</button> 
             </form> 
-  
+--> 
         </div>
     </header>
 

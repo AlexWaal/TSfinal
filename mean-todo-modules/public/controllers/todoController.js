@@ -1,5 +1,5 @@
 angular.module('todoController', [])
-  .controller('TodoCrtl', ['$scope', '$http', 'Todos', function ($scope, $http, Todos, $sce, $timeout) {
+  .controller('TodoCrtl', ['$scope', '$http', 'Todos', function ($scope, $http, Todos, $sce) {
 
 
     load = function () {
@@ -23,5 +23,4 @@ angular.module('todoController', [])
           load();
         });
     };
-
   }]);

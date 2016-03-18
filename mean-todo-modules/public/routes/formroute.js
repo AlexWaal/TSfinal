@@ -24,8 +24,14 @@ angular.module('formroute', ['ngAnimate', 'ui.router'])
         });
        
     $urlRouterProvider.otherwise('/form/soundform');
+})
+
+.controller('formController', function($scope) {
+    
+    $scope.formData = {};
+    $scope.processForm = function() {
+        alert('awesome!');  
+    };
 });
-
-
 
 

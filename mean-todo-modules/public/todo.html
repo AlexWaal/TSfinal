@@ -24,7 +24,6 @@
     <title>final</title>
 
     <script src="controllers/todoController.js"></script>
-    <script src="controllers/formController.js"></script>
     <script src="routes/formroute.js"></script>
     <script src="services/todoMongoService.js"></script>
     <script src="script/srcdis.js"></script>
@@ -37,7 +36,7 @@
 
 <div id="wrapper" ng-controller="TodoCrtl">
     <header id="header">
-        <div ng-view id="headerbox" ng-controller="formCtrl">  
+        <div ng-view id="headerbox" ng-controller="formController">  
             <div ui-view></div>
 
 <!--

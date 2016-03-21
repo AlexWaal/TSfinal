@@ -1,1 +1,1 @@
-angular.module('todo', ['todoController', 'todoService', 'myAppWithSceDisabledmyApp', 'formroute']);
+angular.module('todo', ['todoController', 'todoService', 'myAppWithSceDisabledmyApp']);

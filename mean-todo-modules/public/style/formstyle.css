@@ -1,38 +1,75 @@
-/* BASIC STYLINGS */
-body                            { padding-top:20px; }
-pre                             { margin-bottom:20px; }
+/*
+#99B898 groen
+#FECEA8 huidgeel
+#FF847C lichtrood
+#E84A5F rood
+#2A363B zwartblauw
+*/
 
-/* form styling */
-#form-container                { background:#2f2f2f; margin-bottom:20px;
-    border-radius:5px; }
-#form-container .page-header   { background:#151515; margin:0; padding:30px; 
-    border-top-left-radius:5px; border-top-right-radius:5px; }
+.headerboxhead {
+  text-align: center;
+}
 
-/* numbered buttons */
-#status-buttons                 {  }
-#status-buttons a               { color:#FFF; display:inline-block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; }
-#status-buttons a:hover         { text-decoration:none; }
-#status-buttons span            { background:#080808; display:block; height:30px; margin:0 auto 10px; padding-top:5px; width:30px; 
-    border-radius:10%; }
+/* soundform */
+#URLdiv {
+  text-align: center;
+}
 
-/* active buttons */
-#status-buttons a.active span   { background:#00BC8C; }
+/* infoform */
+#INFOdiv {
+  text-align: center;
+}
+/* addform */
+#ADDdiv {
+  text-align: center;
+}
 
- 
+/*button*/
+#nextdiv {
+  text-align: center;
+  margin:0 auto;
+  margin-top:10px;
+  width:40px;
+  border-radius: 5px;
+  border:2px solid #E84A5F;
+}
+
+#ADDbutton {
+  text-align: center;
+  margin:0 auto;
+  font-size:20px;
+  color:white;
+  width:80px;
+  height:80px;
+  border-radius: 5px;
+  border:2px solid #E84A5F;
+  background-color:#2A363B;
+
+}
+
 .radio {
   display:inline-block;
-  margin-right:15px;
+  margin-bottom:20px;
 }
 
 .material-icons {
    font-size:18px;
+   color:white;
 }
 
+/* headerbox buttons */
+#status-buttons                 {  }
+#status-buttons a               { color:#fff; display:inline-block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; text-decoration:none;}
+#status-buttons a:hover         { color:#fff; }
+#status-buttons span            { background:#E84A5F; display:block; height:30px; margin:0 auto 10px; padding-top:5px; width:30px; 
+    border-radius:10%; }
 
+
+/*animatie spul */
 
 #signup-form { 
   position:relative; 
-  min-height:300px; 
+  height:400px; 
   overflow:hidden; 
   padding:30px; 
 }

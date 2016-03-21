@@ -1,7 +1,10 @@
 body {
 	margin: 0 auto;
 	padding: 0 auto;
-	background-color:#373D46;
+	color:white;
+	background-color:#2A363B;
+	font-family:'Montserrat';
+	src: url('fonts/Montserrat-Regular.ttf');
 }
 
 
@@ -17,8 +20,7 @@ body {
 }
 
 #header {
-	margin-top:0;
-	height:350px;
+	height:800px;
 	overflow:auto;
 }
 
@@ -43,11 +45,11 @@ body {
 /*			*/
 
 #headerbox {
-	width:550px;
-	height:200px;
+	width:1000px;
+	height:600px;
 	margin: 0 auto;
 	margin-top:100px;
-	border:2px solid black;
+	border:2px solid #E84A5F;
 	border-radius: 5px;
 }
 
@@ -71,49 +73,21 @@ body {
 /*input*/
 /*			*/
 
-form{
-	margin-left:21.5px;
-	margin-top:25px;
+.arrow {
+	font-size:30px;
 }
+
 
 input[type=text] {
 	text-align:center;
-	background-color:#373D46;
+	background-color:#2A363B;
 	border-style:none; 
 	outline: none;
-	outline: none;
-  	border: 1px solid black;
-  	margin-bottom:5px;
+  	border: 2px solid #E84A5F;
+  	border-radius:5px;
+  	width:50%;
+  	height:40px;
+  	color:white;
+  	font-size:20px;
 }
 
-#fileinput {
-	width: 450px;
-	height: 25px;
-}
-.authorinput, .titelinput {
-	width:221px;
-	height: 25px;
-	margin-top:5px;
-}
-
-.commentinput {
-	width:450px;
-	height:50px;
-	margin-top:5px;
-}
-
-input[type=submit] {
-	width:20px
-	height:20px;
-}
-
-input:focus {
-    outline:none;
-}
-
-
-/*
-textarea, input { 
-	outline: none; 
-}
-*/

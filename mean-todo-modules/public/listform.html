@@ -1,0 +1,27 @@
+<div id="nextdiv">
+    <a ui-sref="form.soundform">
+    <span class="arrow"><i class="material-icons">&#xE314;</i></span>
+    </a>
+</div>
+
+            <div id="addbox" ng-repeat="todo in todos">
+                <div id="innerbox">
+                    <div id="titeldiv">{{todo.titel}}</div>
+                    <button class="delbtn" ng-click="delete(todo._id)"> &#9587;</button>
+
+                    <audio controls="play">
+                        <source ng-src="{{todo.task}}" type="audio/mpeg">
+                        <source ng-src="{{todo.task}}" type="audio/ogg">
+                    </audio>
+
+                    <div id="authordiv">{{todo.author}}</div>
+                    <div id="commentdiv">{{todo.comment}}</div>
+                    <div id="votediv">
+                        <button id="voteup" ng-mousedown="bij = bij + 1" ng-init="bij=0">{{"+" + bij}}</button>
+                        <button id="votedown" ng-mousedown="af = af + 1" ng-init="af=0">{{"-" + af}}</button>
+                    </div>
+                </div>
+            </div>
+
+
+

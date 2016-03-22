@@ -10,6 +10,7 @@ angular.module('todoController', ['ngAnimate', 'ui.router'])
 
     load();
 
+    $scope.todo = {};
     $scope.save = function () {
       Todos.create($scope.todo)
         .success(function () {
@@ -32,7 +33,7 @@ angular.module('todoController', ['ngAnimate', 'ui.router'])
         .state('form', {
             url: '/form',
             templateUrl: 'form.html',
-            controller: 'formController'
+            controller: 'TodoCrtl'
         })
         
         .state('form.soundform', {
@@ -48,15 +49,12 @@ angular.module('todoController', ['ngAnimate', 'ui.router'])
         .state('form.addform', {
             url: '/addform',
             templateUrl: 'addform.html'
+        })
+
+        .state('form.listform', {
+            url: '/listform',
+            templateUrl: 'listform.html'
         });
        
     $urlRouterProvider.otherwise('/form/soundform');
-})
-
-.controller('formController', function($scope) {
-    
-    $scope.formData = {};
-    $scope.processForm = function() {
-        alert('awesome!');  
-    };
 });

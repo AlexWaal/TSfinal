@@ -8,19 +8,19 @@
               <a ui-sref-active="active" ui-sref=".soundform"><span><i class="material-icons">link</i></span> Sound</a>
               <a ui-sref-active="active" ui-sref=".infoform"><span><i class="material-icons">create</i></span> info</a>
               <a ui-sref-active="active" ui-sref=".addform"><span><i class="material-icons">add</i></span> add</a>
+              <a ui-sref-active="active" ui-sref=".listform"><span><i class="material-icons">audiotrack</i></span> list</a>
           </div>
       </div>
 
-      <form id="signup-form" ng-submit="processForm()">
+      <form id="signup-form" ng-submit="save()" ng-model-instant>
           <div id="form-view" ui-view></div>
       </form>
   
   </div>
- <!-- 
+ 
 
   <pre>
-    {{ formData }}
+    {{ todo }}
   </pre>
 
-  -->
-
+  

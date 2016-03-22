@@ -33,7 +33,7 @@
 </head>
 <body>
 
-<div id="wrapper" ng-controller="TodoCrtl" ng-controller="formController">
+<div id="wrapper" ng-controller="TodoCrtl" >
     <header id="header" >
         <div ng-view id="headerbox" >  
             <div ui-view ></div>
@@ -47,8 +47,8 @@
                 <INPUT ng-model="todo.comment" class="commentinput" type="text" name="txtName" value ="" placeholder="comment..">
                  <button type="submit" ng-click="save()" ng-model-instant ></a> Add</button> 
             </form> 
--->     
-        
+    
+ -->        
     </header>
 
     <main id="main">

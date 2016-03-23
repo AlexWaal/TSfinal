@@ -7,6 +7,20 @@ body {
 	src: url('fonts/Montserrat-Regular.ttf');
 }
 
+#paginatitel {
+	margin: 0 auto;
+	padding: 0 auto;
+	margin-top:630px;
+	clear:both;
+	width:400px;
+	text-align: center;
+	position: absolute;
+	font-size:30px;
+	color:#FF847C;
+	transform: rotate(-90deg);
+	text-shadow: 12px 3px 10px rgba(0, 0, 0, 0.1)
+}
+
 
 /*			*/
 /* hoofd divs*/
@@ -16,7 +30,6 @@ body {
 	width:1500px;
 	margin:0 auto;
 	clear:both;
-
 }
 
 #header {
@@ -25,15 +38,27 @@ body {
 }
 
 #main {
+	margin-top:200px;
 	height:500px;
 	
 }
 
+#maintitel {
+	margin: 0 auto;
+	padding: 0 auto;
+	margin-bottom:-420px;
+	clear:both;
+	width:1000px;
+	text-align: left;
+	font-size:20px;
+	color:#FF847C;
+	text-shadow: 12px 3px 10px rgba(0, 0, 0, 0.1)
+}
+
 #footer {
 	display:block;
-	position: fixed; 
 	bottom:0px; 
-	height:30px;
+	height:300px;
 	width:1450px;
 	margin-left:25px;
 	border-top-right-radius:5px; 
@@ -45,20 +70,24 @@ body {
 /*			*/
 
 #headerbox {
-	width:1000px;
+	width:1060px;
 	height:600px;
 	margin: 0 auto;
-	margin-top:100px;
+	margin-top:150px;
 	border:2px solid #E84A5F;
 	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 40px 12px rgba(0,0,0,0.12);
+	-moz-box-shadow: 0px 0px 40px 12px rgba(0,0,0,0.12);
+	box-shadow: 0px 0px 40px 12px rgba(0,0,0,0.12);
 }
 
-#mainbox {
-	width:1450px;
-	height:450px;
+#mainbox {     
+	transform: rotate(-90deg);
+	width:150px;
+	height:1000px;
 	margin: 0 auto;
-	margin-top:25px;
-	
+	margin-top:-200px;
+	margin-bottom:400px;
 	border-radius: 5px; 
 	overflow:auto;
 	background-color: #373D46;
@@ -68,6 +97,41 @@ body {
 	box-shadow: 0px 0px 40px 12px rgba(0,0,0,0.12);
 
 }
+
+#lijstje {
+	transform: rotate(180deg);
+	width:120px;
+	height:25px;
+	float:left;
+	margin-top:10px;
+	margin-left:10px;
+	background-color:black;
+	border-radius:3px;
+
+}
+#lijstjedel{
+	margin-right:4px;
+	border-radius:3px;
+	height:25px;
+	border:none;
+	background-color:black;
+	color:#E84A5F;
+	cursor: pointer;
+	float:left;
+}
+#lijstjedel:hover {
+	background-color:#E84A5F;
+	color:white;
+	cursor: pointer;
+	float:left;
+}
+
+#lijstjetitel {
+	overflow:auto;
+	margin-top:6px;
+	font-size:10px;
+}
+
 
 /*			*/
 /*input*/
@@ -92,3 +156,5 @@ input[type=text] {
   	font-size:20px;
 }
 
+
+::-webkit-scrollbar              {display:none;	}

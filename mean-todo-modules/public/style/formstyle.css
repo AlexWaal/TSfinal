@@ -13,6 +13,7 @@
 /* soundform */
 #URLdiv {
   text-align: center;
+
 }
 
 /* infoform */
@@ -29,9 +30,9 @@
 }
 
 
-
 /*button*/
-#nextdiv {
+
+#nextdiv a{
   text-align: center;
   margin:0 auto;
   margin-top:10px;
@@ -39,16 +40,12 @@
   border-radius: 5px;
   border:2px solid #E84A5F;
   background-color:none;
+  display:block;
+  margin-bottom:10px;
 }
 
-#nextdiv:hover {
-  text-align: center;
-  margin:0 auto;
-  margin-top:10px;
-  width:40px;
-  border-radius: 5px;
+#nextdiv a:hover {
   border:2px solid white;
-  background-color:none;
 }
 
 
@@ -62,7 +59,15 @@
   border-radius: 5px;
   border:2px solid #E84A5F;
   background-color:#2A363B;
+  outline: none;
+}
+#ADDbutton:hover {
+  border:2px solid white;
+  cursor: pointer;
 
+}
+#ADDbutton:active {
+  color:#E84A5F;
 }
 
 .radio {
@@ -79,11 +84,14 @@
 /* headerbox buttons */
 #status-buttons                 {   }
 #status-buttons a               { color:#fff; display:inline-block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; text-decoration:none;}
-#status-buttons a:hover         { color:#FECEA8; }
-#status-buttons span            { background:#E84A5F; display:block; height:30px; margin:5px; padding-top:5px; width:30px; border-radius:10%; }
-#status-buttons span:hover      { background:#E84A5F; display:block; height:30px; margin:5px; padding-top:5px; width:30px; border-radius:10%; }
+#status-buttons span            { background:#E84A5F; display:block; height:30px; margin:5px; padding-top:5px; width:30px; border-radius:10%; border:2px solid #E84A5F;}
+#status-buttons span:hover      { background:#E84A5F; display:block; height:30px; margin:5px; padding-top:5px; width:30px; border-radius:10%; border:2px solid #fff;}
 
 /*animatie spul */
+#listbox {
+  height:400px; 
+  overflow:auto; 
+}
 
 #signup-form { 
   position:relative; 

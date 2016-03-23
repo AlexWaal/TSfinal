@@ -1,9 +1,8 @@
 <div id="URLdiv">
     <label for="soundurl">Sound Url</label>
     <br>
-    <input type="text" class="form-control" name="task" ng-model="todo.task">
+    <input type="text" class="form-control" name="task" ng-model="todo.task" ng-minlength="1" ng-maxlength="30">
 </div>
-
 
 <div id="nextdiv">
     <a ui-sref="form.infoform">

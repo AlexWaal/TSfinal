@@ -4,121 +4,126 @@
 }
 
 #addbox {
-	width:250px;
-	height:200px;
-	border:2px solid #23272D;
-	margin-left:10px;
-	margin-top:10px;
+	width:225px;
+	height:100px;
+	border:4px solid black;
+	border-radius:5px;
+	margin-left:15px;
+	margin-top:15px;
 	float:left;
 	font-family:'Montserrat', sans-serif;
 	font-size:12px;
+
 }
 
 #innerbox {
 	margin:2px;
-	height:195px;
+	width:221px;
+	height:96px;
 	overflow:hidden;
 	color:white;
+	background:;
+	border-radius:2px;
 }
 
 #titeldiv {
-	width:210px;
-	height:25px;
-	color:#FF553F;
-	background-color:#23272D;
+	background-color:black;
+	color:#FF847C;
+	width:221px;
+	height:20px;
+	margin-right:2px;	
 	padding-left:5px;
-	padding-top:5px;
+	padding-top:2px;
 	float:left;
-	margin-bottom:2px;
-}
-
-#authordiv {
-	margin-top:2px;
-	width:250px;
-	height:25px;
-	background-color:#23272D;
-	padding-left:5px;
-	padding-top:5px;
-	float:left;
-	color:#7A7B74;
-}
-
-#commentdiv {
-	margin-top:2px;
-	width:250px;
-	height:65px;
-	background-color:#23272D;
-	padding-left:5px;
-	padding-top:5px;
-	float:left;
-	color:#7A7B74;
-}
-
-#votediv {
-	width:250px;
-	height:40px;
-	margin-top:2px;
-	background-color:#23272D;
-
-	float:left;
-}
-
-#voteup {
-	width:24px;
-	height:24px;
-	margin:3px;
-	background-color:#373D45;
-	float:left;
-
-	border: none;
-    color: #00E3AF;
-    text-align: center;
-    text-decoration: none;
-    font-size: 8px;
-    font-weight: bold;
-    cursor: pointer; 
-
-}
-#votedown {
-	width:24px;
-	height:24px;
-	margin-right:7px;
-	margin-top:3px;
-	background-color:#373D45;
-	float:right;
-
-	border: none;
-    color: #FF3273;
-    text-align: center;
-    text-decoration: none;
-  
-    font-size: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    
-
+	border-radius: 1.7px 1.7px 0px 0px;
 }
 
 .delbtn {
-    background-color: #23272D;
-    width:29px;
-    height:30px;
-    margin-left:2px;
-    margin-bottom:2px;
-
+    background-color:black;
+    color: #FF847C;
+    width:26px;
+    height:20px;
+	border-radius: 1.7px 1.7px 1.7px 1.7px;
     border: none;
-    color: #FF553F;
-    padding: 5px 5px;
     text-align: center;
     text-decoration: none;
-  
     font-size: 8px;
     font-weight: bold;
     cursor: pointer;
     float:left;
 }
 
+.delbtn:hover {
+    background-color:#FF847C;
+    color: white;
+}
+
+#authordiv {
+	width:190px;
+	height:22px;
+	padding-left:5px;
+	float:left;
+	background-color:black;
+	font-size:10px;
+	color:#B8B8B8;
+}
+
+#commentdiv {
+	width:190px;
+	height:22px;
+	background-color:black;
+	padding-left:5px;
+	float:left;
+	border-radius: 0px 0px 1.7px 2.7px;
+	font-size:10px;
+	color:#B8B8B8;
+}
+
+#voteup {
+    background-color:black;
+    color: #99B898;
+    width:26px;
+    height:22px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    float:left;
+}
+
+#voteup:hover {
+    background-color:#FF847C;
+    color: white;
+}
+
+#votedown {
+    background-color:black;
+    color: #FECEA8;
+    width:26px;
+    height:22px;
+	border-radius: 0px 0px 1.7px 1.7px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    float:left;
+}
+
+#votedown:hover {
+    background-color:#FF847C;
+    color: white;
+}
+
 audio::-webkit-media-controls-volume-slider-container{display:none;}
 audio::-webkit-media-controls-volume-slider{display:none;}
-audio {width:250px; background-color:black; margin-bottom:-4px;}
+audio {
+	width:221px; 
+	background-color:black;  
+	border-radius:2px 2px 1.7px 1.7px; 
+}
+	/*transform: rotate(90deg);}*/
 

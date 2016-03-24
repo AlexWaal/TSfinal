@@ -1,7 +1,6 @@
 angular.module('todoController', ['ngAnimate', 'ui.router'])
   .controller('TodoCrtl', ['$scope', '$http', 'Todos', function ($scope, $http, Todos, $sce) {
 
-
     load = function () {
       Todos.get().success(function (data) {
         $scope.todos = data;

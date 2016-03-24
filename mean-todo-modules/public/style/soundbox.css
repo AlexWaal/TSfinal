@@ -26,64 +26,79 @@
 	border-radius:2px;
 }
 
+#typediv {
+	background-color:#131313;
+	color:#FECEA8;
+	font-size:10px;
+	width:39px;
+	height:22px;	
+	float:right;
+	border-radius: 0px 1.7px 1.7px 0px;
+	text-align: center;
+	padding-top:8px;
+	padding-right:2px;
+	cursor:default;
+	text-transform: uppercase;
+}
+
 #titeldiv {
 	background-color:black;
 	color:#FF847C;
-	width:221px;
-	height:20px;
-	margin-right:2px;	
+	width:190px;
+	height:18px;	
 	padding-left:5px;
-	padding-top:2px;
+	padding-top:4px;
 	float:left;
-	border-radius: 1.7px 1.7px 0px 0px;
+	border-radius: 1.7px 0px 0px 0px;
+	text-transform: uppercase;
 }
 
-.delbtn {
+#DLbutton {
     background-color:black;
-    color: #FF847C;
     width:26px;
-    height:20px;
-	border-radius: 1.7px 1.7px 1.7px 1.7px;
+    height:21px;
     border: none;
-    text-align: center;
-    text-decoration: none;
-    font-size: 8px;
-    font-weight: bold;
     cursor: pointer;
     float:left;
-}
+    text-align: center;
+    padding-top:1px;
 
-.delbtn:hover {
-    background-color:#FF847C;
-    color: white;
+}
+#DLbutton:hover {
+	background-color:#FECEA8;
 }
 
 #authordiv {
 	width:190px;
-	height:22px;
+	height:18px;
 	padding-left:5px;
+	padding-top:4px;
 	float:left;
 	background-color:black;
 	font-size:10px;
 	color:#B8B8B8;
+	text-transform: capitalize;
 }
 
 #commentdiv {
 	width:190px;
-	height:22px;
+	height:20px;
 	background-color:black;
 	padding-left:5px;
+	padding-top:2px;
 	float:left;
 	border-radius: 0px 0px 1.7px 2.7px;
 	font-size:10px;
 	color:#B8B8B8;
+	font-style: italic;
+	text-transform: capitalize;
 }
 
 #voteup {
     background-color:black;
-    color: #99B898;
+    color: white;
     width:26px;
-    height:22px;
+    height:16px;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -91,6 +106,7 @@
     font-weight: bold;
     cursor: pointer;
     float:left;
+    padding-top:6px;
 }
 
 #voteup:hover {
@@ -100,9 +116,9 @@
 
 #votedown {
     background-color:black;
-    color: #FECEA8;
-    width:26px;
-    height:22px;
+    color: white;
+    width:25px;
+    height:18px;
 	border-radius: 0px 0px 1.7px 1.7px;
     border: none;
     text-align: center;
@@ -111,6 +127,8 @@
     font-weight: bold;
     cursor: pointer;
     float:left;
+    padding-top:4px;
+    padding-left:1px;
 }
 
 #votedown:hover {
@@ -121,9 +139,10 @@
 audio::-webkit-media-controls-volume-slider-container{display:none;}
 audio::-webkit-media-controls-volume-slider{display:none;}
 audio {
-	width:221px; 
-	background-color:black;  
-	border-radius:2px 2px 1.7px 1.7px; 
+	width:180px; 
+	background-color:#131313;  
+	border-radius:2px 0px 0px 1.7px; 
+
 }
-	/*transform: rotate(90deg);}*/
+
 

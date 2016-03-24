@@ -13,15 +13,16 @@
                         <source ng-src="{{todo.task}}" type="audio/ogg">
                     </audio>
 
-                    <div id="titeldiv">{{todo.titel}}</div>
-                   
+                    <div id="typediv">{{todo.type}}</div> 
+
+                    <div id="titeldiv"> {{todo.titel}} </div>
+                    <a download=" " ng-href="{{todo.task}}" id="DLbutton"><i class="material-icons">&#xE884;</i>>download</a>
 
                     <div id="authordiv">{{todo.author}}</div>
-                    <button id="voteup" ng-mousedown="bij = bij + 1" ng-init="bij=0">{{"+" + bij}}</button>
+                    <a id="voteup" ng-mousedown="bij = bij + 1" ng-init="bij=0">{{"+ " + bij}}</a>
 
-                    <div id="commentdiv">{{todo.comment}}</div>
-                    <button id="votedown" ng-mousedown="af = af + 1" ng-init="af=0">{{"-" + af}}</button>
-                     
+                    <div id="commentdiv">{{ todo.comment}} </div>
+                    <a id="votedown" ng-mousedown="af = af + 1" ng-init="af=0">{{"- " + af}}</a>
                 </div>
             </div>
     </div>
